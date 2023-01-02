@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <title>Portafolio LAAA</title>
+</head>
+<body>
+    <div class="header">
+        <h2>Luis Armando Aguayo Aceves</h2>
+        <h3>Front-end Developer</h3>
+        <br>
+        <h3>Skills</h3>
+        <div class="skill">
+            <div id="skill1"></div>
+            <div id="skill2"></div>
+            <div id="skill3"></div>
+            <div id="skill4"></div>
+            <div id="skill5"></div>
+            <div id="skill6"></div>
+        </div>
+    </div>
+    <div class="project">
+        <h2>Projects</h2>
+        <a href="https://proyecto1netlify.netlify.app/" title="Freelancer">
+            <img src="img/1.jpg" alt="Imagen 1">
+        </a>
+        <a href="https://proyecto2netlify.netlify.app/" title="Tienda">
+            <img src="img/2.jpg" alt="Imagen 2">
+        </a>
+        <a href="https://blogdecafepractica3.netlify.app/" title="cafe">
+            <img src="img/3.jpg" alt="Imagen 3">
+        </a>
+        <a href="https://zesty-squirrel-5337ec.netlify.app/" title="evento">
+            <img src="img/4.jpg" alt="Imagen 4">
+        </a>
+        <a href="https://jovial-druid-2ee95b.netlify.app/" title="galeria">
+            <img src="img/5.jpg" alt="Imagen 5">
+        </a>
+    </div>
+    <form action="form" method="post" class="formulario">
+        <div class="campo">
+            <label for="nombre" class="campo__label">Nombre</label>
+            <input class="campo__field" type="text" placeholder="Tu nombre" id="nombre">
+        </div>
+        <div class="campo">
+            <label for="email" class="campo__label">E-mail</label>
+            <input class="campo__field" type="email" placeholder="Tu E-mail" id="email">
+        </div>
+        <div class="campo">
+            <label for="mensaje" class="campo__label">Mensaje</label>
+            <textarea class="campo__field--textarea" id="mensaje"></textarea>
+
+        </div>
+        <div class="campo">
+            <input type="submit" value="Enviar" class="boton--primario">
+        </div>
+    </form>
+    <script src="js/modernizr.js"></script>
+</body>
+</html>
