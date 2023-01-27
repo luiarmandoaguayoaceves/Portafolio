@@ -1,0 +1,34 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "Mi portafolio para programacion",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cssnano": "^5.1.14",
+    "gulp": "^4.0.2",
+    "gulp-avif": "^1.1.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser-js": "^5.2.2",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.57.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luiarmandoaguayoaceves/Portafolio.git"
+  },
+  "author": "Luis Armando Aguayo Aceves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luiarmandoaguayoaceves/Portafolio/issues"
+  },
+  "homepage": "https://github.com/luiarmandoaguayoaceves/Portafolio#readme"
+}
