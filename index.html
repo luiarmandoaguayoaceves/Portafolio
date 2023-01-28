@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/normalize.css">
     <title>Portafolio LAAA</title>
@@ -12,7 +15,11 @@
     <div class="header">
             <h2>Luis Armando Aguayo Aceves</h2>
             <h3>Front-end Developer</h3>
-            <img class="foto-perfil" src="img/foto_perfil.jpg" alt="foto de perfil">
+            <picture class="perfil">
+                <source class="foto-perfil" srcset="build/img/foto_perfil.avif" type="image/avif">
+                <source class="foto-perfil" srcset="build/img/foto_perfil.webp" type="image/webp">
+                <img class="foto-perfil" loading="lazy"  src="build/img/foto_perfil.jpg" alt="Imagen 1">
+            </picture>
             <h3>Skills</h3>
         <div class="skill">
             <div id="skill1"></div>
@@ -26,15 +33,23 @@
     <h2 class="Projects">Projects</h2>
     <div class="container">
         <div class="card">
-            <img src="img/Freelancer.jpg" alt="Imagen 1">
+            <picture>
+                <source srcset="build/img/Freelancer.avif" type="image/avif">
+                <source srcset="build/img/Freelancer.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/Freelancer.jpg" alt="Imagen 1">
+            </picture>
             <h4>Pagina Freelancer</h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, cumque.</p>
             <a href="https://proyecto1netlify.netlify.app/" title="Freelancer">
                 <button>Ir a la pagina</button>
             </a>
         </div>
-        <div class="card">    
-            <img src="img/Tienda.jpg" alt="Imagen 2">
+        <div class="card">   
+            <picture>
+                <source srcset="build/img/Tienda.avif" type="image/avif">
+                <source srcset="build/img/Tienda.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/Tienda.jpg" alt="Imagen 1">
+            </picture>
             <h4>Pagina Tienda</h4>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, consequuntur.</p>
             <a href="https://proyecto2netlify.netlify.app/" title="Tienda">
@@ -42,7 +57,11 @@
             </a>
         </div>
         <div class="card">
-            <img src="img/cafe.jpg" alt="Imagen 3">
+            <picture>
+                <source srcset="build/img/cafe.avif" type="image/avif">
+                <source srcset="build/img/cafe.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/cafe.jpg" alt="Imagen 1">
+            </picture>
             <h4>Pagina Cafe</h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, animi.</p>
             <a href="https://blogdecafepractica3.netlify.app/" title="cafe">
@@ -50,7 +69,11 @@
             </a>
         </div>
         <div class="card">
-            <img src="img/evento.jpg" alt="Imagen 4">
+            <picture>
+                <source srcset="build/img/evento.avif" type="image/avif">
+                <source srcset="build/img/evento.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/evento.jpg" alt="Imagen 1">
+            </picture>
             <h4>Pagina Evento</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, est?</p>
             <a href="https://zesty-squirrel-5337ec.netlify.app/" title="evento">
@@ -58,7 +81,11 @@
             </a>
         </div>
         <div class="card">
-            <img src="img/galeria.jpg" alt="Imagen 5">
+            <picture>
+                <source srcset="build/img/galeria.avif" type="image/avif">
+                <source srcset="build/img/galeria.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/galeria.jpg" alt="Imagen 1">
+            </picture>
             <h4>Pagina Galeria</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, sunt!</p>
             <a href="https://jovial-druid-2ee95b.netlify.app/" title="galeria">

@@ -75,13 +75,15 @@ h4 {
     grid-row: 1;
     grid-column: 2;
 }
-
-.foto-perfil{
+.perfil{
     grid-row: 2/4;
     grid-column: 1;
+    text-align: center;
+}
+
+.foto-perfil{
     width: 50%;
-    border-radius: 50rem;
-    margin:auto;    
+    border-radius: 50rem; 
 }
 
 .skill{
@@ -98,22 +100,22 @@ h4 {
 }
 
 #skill1{
-    background-image: url(../img/html.png);
+    background-image: url(../build/img/html.webp);
 }
 #skill2{
-    background-image: url(../img/css.png);
+    background-image: url(../build/img/css.webp);
 }
 #skill3{
-    background-image: url(../img/js.png);
+    background-image: url(../build/img/js.webp);
 }
 #skill4{
-    background-image: url(../img/react.png);
+    background-image: url(../build/img/react.webp);
 }
 #skill5{
-    background-image: url(../img/gulp.png);
+    background-image: url(../build/img/gulp.webp);
 }
 #skill6{
-    background-image: url(../img/sass.png);
+    background-image: url(../build/img/sass.webp);
 }
 /***********PROJECTS****************/
 .Projects{
