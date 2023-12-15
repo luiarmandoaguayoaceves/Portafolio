@@ -1,0 +1,40 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.formulario{
+    display: flex;
+    justify-content: center; 
+}
+
+form{
+    background: v.$azulTransparente;
+    width: 50rem;
+    padding: 3rem;
+    color: v.$blanco;
+    border-radius: 2%;
+}
+.campo{
+    display: flex;
+  justify-content: space-between; /* Centrar horizontalmente */
+  margin: 2rem;
+}
+
+.campo input{
+    width: 30rem;
+}
+
+.campo textarea{
+    width: 30rem;
+    resize: none;
+}
+
+.campo:last-of-type{
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.boton--primario{
+    height: 4rem;
+    pointer-events: none;
+    
+}

@@ -1,0 +1,66 @@
+
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.perfil{
+display: flex;
+}
+
+.foto{
+    display: grid;
+    place-items: center;
+
+}
+
+
+.foto img{
+    border-radius: 100%;
+    width: 20rem;
+    height: 20rem;
+    margin: -10rem 2rem;
+}
+
+.skill{
+    display: flex;
+    justify-content: center;
+}
+#skill1{
+    content: url(../img/js.png);
+    width: 5rem;
+    height: 5rem;
+}
+
+#skill2{
+    content: url(../img/css.avif);
+    width: 5rem;
+    height: 5rem;
+}
+
+#skill3{
+    content: url(../img/html.avif);
+    width: 5rem;
+    height: 5rem;
+}
+#skill4{
+    content: url(../img/ts.avif);
+    width: 5rem;
+    height: 5rem;
+}
+#skill5{
+    content: url(../img/sass.avif);
+    width: 5rem;
+    height: 5rem;
+}
+#skill6{
+    content: url(../img/sql.avif);
+    width: 5rem;
+    height: 5rem;
+}
+
+.btn-like{
+    width: 15rem;
+    height: 5rem;
+    margin-top: 10rem;
+    background: v.$azulTransparente;
+    border-radius: 10%;
+}

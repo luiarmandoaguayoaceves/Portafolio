@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Mi portafolio para programacion",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "sharp": "^0.33.0"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "cssnano": "^5.1.14",

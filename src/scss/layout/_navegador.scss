@@ -1,0 +1,18 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.navegador{
+    background-color: v.$azulTransparente;
+    display: flex;
+    justify-content: end;
+}
+
+.navegador li{
+    list-style-type: none;
+    padding: 2rem 3rem;
+    font-size: 3rem;
+}
+
+.navegador li a {
+    color: v.$blanco;
+}

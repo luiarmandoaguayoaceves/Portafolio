@@ -1,17 +1,40 @@
 //Tipografia
 $fuente_principal: 'Roboto Condensed', sans-serif;
+@fa-font-path:   "../font";
 
 
 //Colores
 $azulBajo:#93C6E7;
-$negro:#000000;
 $blanco:#FFFFFF;
 $gris: #E5E0FF;
 $morado: #6C00FF;
 $azul: #3C79F5;
+$azulTransparente: rgba(#3C79F5, .5);
+$crema: #D3D3D3;
+$verde:#4cd8b3;
+$rosa:#f53765;
+$amarillo:#FEF46D;
+$negro:#000000;
+
 
 //Tamaños de los mediaquerys
 $phone: 480px;
 $tablet: 768px;
 $desktop: 992px;
 $desktopLX: 1200px;
+
+//Movimientos
+@keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+  }

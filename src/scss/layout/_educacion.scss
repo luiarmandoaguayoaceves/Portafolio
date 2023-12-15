@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.educacion{
+    display: flex;
+    justify-content: center;
+    
+ 
+}
+.educacion section {
+    width: 25vw;
+    padding: 0 3rem;
+    margin: 2rem;
+    border: 2px solid v.$gris;
+    border-radius: 2%;
+    
+}
+
+.educacion section picture{
+    width: 20rem;
+    height: 20rem;
+    
+}
+
+.educacion section img{
+    width: 20vw;
+    height: 30vh;
+    padding-top: 2rem;
+ 
+}
+

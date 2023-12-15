@@ -6,7 +6,7 @@ const plumber = require('gulp-plumber');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const postcss = require ('gulp-postcss');
-const sourcemaps = ('gulp-sourcemaps');
+const sourcemaps = require('gulp-sourcemaps');
 
 //IMAGENES
 const cache = require ('gulp-cache');
@@ -87,5 +87,5 @@ exports.imagenes = imagenes;
 exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
 
-// exports.dev = parallel(imagenes, versionWebp, versionAvif, dev);
+exports.dev = parallel(imagenes, versionWebp, versionAvif, dev, javascript);
 exports.dev = (dev);

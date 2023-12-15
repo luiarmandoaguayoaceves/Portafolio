@@ -1,0 +1,42 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    gap: 20px; 
+    padding: 20px;
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+    margin: 3rem;
+    background-color: v.$azulTransparente;
+    padding: 3rem;
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    
+}
+
+.card:hover {
+    animation: shake 0.5s ease;
+}
+
+.button{
+    text-align: center;
+    
+}
+
+.card button{
+    height: 5rem;
+    width: 20rem;
+    background: v.$azul;
+    color: v.$blanco;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,80 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/styles.css">
+
+    <link rel="stylesheet" href="build/css/app.css">
     <link rel="stylesheet" href="style/normalize.css">
+    <script src="https://kit.fontawesome.com/9e36f99aa2.js" crossorigin="anonymous"></script>
     <title>Portafolio LAAA</title>
 </head>
+
 <body>
-    <div class="header">
-            <h2>Luis Armando Aguayo Aceves</h2>
-            <h3>Front-end Developer</h3>
-            <picture class="perfil">
+    <nav class="navegador">
+        <li><a href="">Educacion</a></li>
+        <li><a href="">Proyectos</a></li>
+        <li><a href="">Contacto</a></li>
+    </nav>
+    <div class="portada">
+
+    </div>
+    <div class="perfil">
+        <div class="foto">
+            <picture>
                 <source class="foto-perfil" srcset="build/img/foto_perfil.avif" type="image/avif">
                 <source class="foto-perfil" srcset="build/img/foto_perfil.webp" type="image/webp">
-                <img class="foto-perfil" loading="lazy"  src="build/img/foto_perfil.jpg" alt="Imagen 1">
+                <img class="foto-perfil" loading="lazy" src="build/img/foto_perfil.jpg" alt="foto-perfil">
             </picture>
+            <button class="btn-like">
+                <i class="fa-solid fa-thumbs-up fa-2xl" style="color: white;"></i>
+            </button>
+        </div>
+        <div class="informacion">
+            <h2>Luis Armando Aguayo Aceves</h2>
+            <h3>Front-end Developer</h3>
             <h3>Skills</h3>
-        <div class="skill">
-            <div id="skill1"></div>
-            <div id="skill2"></div>
-            <div id="skill3"></div>
-            <div id="skill4"></div>
-            <div id="skill5"></div>
-            <div id="skill6"></div>
+            <div class="skill">
+                <div id="skill1"></div>
+                <div id="skill2"></div>
+                <div id="skill3"></div>
+                <div id="skill4"></div>
+                <div id="skill5"></div>
+                <div id="skill6"></div>
+            </div>
         </div>
     </div>
-    <h2 class="Projects">Projects</h2>
+    <h2>Estudios</h2>
+    <div class="educacion">
+        <section class="secundaria">
+            <picture>
+                <source class="educacion-secundaria" srcset="build/img/secundaria.avif" type="image/avif">
+                <source class="educacion-secundaria" srcset="build/img/secundaria.webp" type="image/webp">
+                <img class="educacion-secundaria" loading="lazy" src="build/img/secundaria.jpg" alt="secundaria">
+            </picture>
+            <h4>Escuela Secundaria Técnica #122</h4>
+            <p>Carrera técnica en computación donde se realizó uso de paquetería office y sistema operativo Windows, sus
+                herramientas e interfaces</p>
+        </section>
+        <section class="preparatoria">
+            <picture>
+                <source class="educacion-preparatoria" srcset="build/img/preparatoria.avif" type="image/avif">
+                <source class="educacion-preparatoria" srcset="build/img/preparatoria.webp" type="image/webp">
+                <img class="educacion-preparatoria" loading="lazy" src="build/img/preparatoria.jpg" alt="secundaria">
+            </picture>
+            <h4>Centro de Enseñanza Técnica Industrial</h4>
+            <p>Tecnologo en Desarrollo de software con desarrollo de habilidades como sistemas operativos programacion
+                movil, web, embebidos, etc.</p>
+        </section>
+        <section class="universidad">
+            <picture>
+                <source class="educacion-universidad" srcset="build/img/universidad.avif" type="image/avif">
+                <source class="educacion-universidad" srcset="build/img/universidad.webp" type="image/webp">
+                <img class="educacion-universidad" loading="lazy" src="build/img/universidad.jpg" alt="secundaria">
+            </picture>
+            <h4>Centro de Enseñanza Técnica Industrial</h4>
+            <p>Ingeniero en desarrollo de software con desarrollo en redes inteligencia artificial bash entre otro.</p>
+        </section>
+    </div>
+    <h2>Projectos</h2>
     <div class="container">
         <div class="card">
             <picture>
@@ -39,22 +90,26 @@
                 <img loading="lazy" width="200" height="300" src="build/img/Freelancer.jpg" alt="Imagen 1">
             </picture>
             <h4>Pagina Freelancer</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, cumque.</p>
-            <a href="https://proyecto1netlify.netlify.app/" title="Freelancer">
-                <button>Ir a la pagina</button>
-            </a>
+            <p>Desarrollada con HTML y CSS</p>
+            <div class="button">
+                <a href="https://proyecto1netlify.netlify.app/" title="Freelancer">
+                    <button>Ir a la pagina</button>
+                </a>
+            </div>
         </div>
-        <div class="card">   
+        <div class="card">
             <picture>
                 <source srcset="build/img/Tienda.avif" type="image/avif">
                 <source srcset="build/img/Tienda.webp" type="image/webp">
                 <img loading="lazy" width="200" height="300" src="build/img/Tienda.jpg" alt="Imagen 1">
             </picture>
             <h4>Pagina Tienda</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, consequuntur.</p>
-            <a href="https://proyecto2netlify.netlify.app/" title="Tienda">
-                <button>Ir a la pagina</button>
-            </a>
+            <p>Desarrollada con HTML y CSS</p>
+            <div class="button">
+                <a href="https://proyecto2netlify.netlify.app/" title="Tienda">
+                    <button>Ir a la pagina</button>
+                </a>
+            </div>
         </div>
         <div class="card">
             <picture>
@@ -63,10 +118,12 @@
                 <img loading="lazy" width="200" height="300" src="build/img/cafe.jpg" alt="Imagen 1">
             </picture>
             <h4>Pagina Cafe</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, animi.</p>
-            <a href="https://blogdecafepractica3.netlify.app/" title="cafe">
-                <button>Ir a la pagina</button>
-            </a>
+            <p>Desarrollada con HTML y CSS</p>
+            <div class="button">
+                <a href="https://blogdecafepractica3.netlify.app/" title="cafe">
+                    <button>Ir a la pagina</button>
+                </a>
+            </div>
         </div>
         <div class="card">
             <picture>
@@ -75,10 +132,12 @@
                 <img loading="lazy" width="200" height="300" src="build/img/evento.jpg" alt="Imagen 1">
             </picture>
             <h4>Pagina Evento</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, est?</p>
-            <a href="https://zesty-squirrel-5337ec.netlify.app/" title="evento">
-                <button>Ir a la pagina</button>
-            </a>
+            <p>Desarrollado con HTML, CSS y JS</p>
+            <div class="button">
+                <a href="https://zesty-squirrel-5337ec.netlify.app/" title="evento">
+                    <button>Ir a la pagina</button>
+                </a>
+            </div>
         </div>
         <div class="card">
             <picture>
@@ -87,31 +146,46 @@
                 <img loading="lazy" width="200" height="300" src="build/img/galeria.jpg" alt="Imagen 1">
             </picture>
             <h4>Pagina Galeria</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, sunt!</p>
-            <a href="https://jovial-druid-2ee95b.netlify.app/" title="galeria">
-                <button>Ir a la pagina</button>
-            </a>
+            <p>Desarrollado con HTML y CSS</p>
+            <div class="button">
+                <a href="https://jovial-druid-2ee95b.netlify.app/" title="galeria">
+                    <button>Ir a la pagina</button>
+                </a>
+            </div>
         </div>
     </div>
-    <form action="form" method="post" class="formulario">
-        <div class="campo">
-            <label for="nombre" class="campo__label">Nombre</label>
-            <input class="campo__field" type="text" placeholder="Tu nombre" id="nombre">
-        </div>
-        <div class="campo">
-            <label for="email" class="campo__label " style="padding-right: 3rem;">Correo </label>
-            <input class="campo__field" type="email" placeholder="Tu E-mail" id="email">
-        </div>
-        <div class="campo">
-            <label for="mensaje" class="campo__label">Mensaje</label>
-            <textarea class="campo__field--textarea" id="mensaje"></textarea>
+    <h2>Formulario</h2>
+    <div class="formulario">
+        <form action="form" method="post">
+            <div class="campo">
+                <label for="nombre" class="campo__label">Nombre</label>
+                <input class="campo__field" type="text" placeholder="Nombre" id="nombre">
+            </div>
+            <div class="campo">
+                <label for="Empresa" class="campo__label">Empresa</label>
+                <input class="campo__field" type="text" placeholder="Nombre de tu empresa" id="nombre">
+            </div>
+            <div class="campo">
+                <label for="email" class="campo__label " style="padding-right: 3rem;">Correo </label>
+                <input class="campo__field" type="email" placeholder="E-mail" id="email">
+            </div>
+            <div class="campo">
+                <label for="mensaje" class="campo__label">Mensaje</label>
+                <textarea class="campo__field--textarea" id="mensaje"></textarea>
 
+            </div>
+            <div class="campo">
+                <input type="submit" value="Pendiente " class="boton--primario">
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>Todos los derechos reservados</p>
+            <p>Luis Armando Aguayo Aceves Diciembre-2023</p>
         </div>
-        <div class="campo">
-            <input type="submit" value="Enviar" class="boton--primario">
-        </div>
-    </form>
-    <footer><p>Todos los derechos reservados</p></footer>
+    </footer>
     <script src="js/modernizr.js"></script>
 </body>
+
 </html>
