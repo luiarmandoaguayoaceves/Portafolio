@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":["navegador","document","querySelector","console","log"],"mappings":"AAAAA,UAAYC,SAASC,cAAc,cACnCC,QAAQC,IAAIJ","file":"app.js","sourcesContent":["navegador = document.querySelector('.navegador')\r\nconsole.log(navegador);"]}

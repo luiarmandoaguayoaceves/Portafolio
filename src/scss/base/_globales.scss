@@ -63,3 +63,13 @@ h2:not(:first-child):nth-child(even){
     margin: 3rem;
 }
 
+h2{
+    margin-top: 10px
+}
+h2:target {
+    scroll-margin-top: 10rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}

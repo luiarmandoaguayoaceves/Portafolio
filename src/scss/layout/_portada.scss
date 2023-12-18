@@ -5,4 +5,9 @@
     content: url(../img/portada.jpg);
     width: 100vw;
     height: 50vh;
+    margin-top: 95px;
+}
+
+.portada:target{
+    scroll-margin-top: 9.5rem;
 }
