@@ -5,15 +5,23 @@
     display: flex;
     justify-content: center;
     
+    @include m.phone{
+        display: grid;
+
+    }
  
 }
 .educacion section {
-    width: 25vw;
-    padding: 0 3rem;
-    margin: 2rem;
     border: 2px solid v.$gris;
     border-radius: 2%;
-    
+    margin: 2rem;
+    padding: 0 3rem;
+    width: 25vw;
+
+    @include m.phone{
+        width: 80%;
+
+    }
 }
 
 .educacion section picture{
@@ -27,5 +35,9 @@
     height: 30vh;
     padding-top: 2rem;
  
+    @include m.phone{
+        width: auto;
+
+    }
 }
 

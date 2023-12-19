@@ -10,12 +10,19 @@
     z-index: 1000;
     padding: 10px;
     top: 0;
+
 }
 
 .navegador li{
     list-style-type: none;
     padding: 2rem 3rem;
     font-size: 3rem;
+
+    @include m.phone{
+        font-size: 1rem;
+        padding: 3rem 2rem 0 0;
+
+    }
 }
 
 .navegador li a {
