@@ -1,2 +1,2 @@
-navegador=document.querySelector(".navegador"),console.log(navegador);
+document.addEventListener("DOMContentLoaded",()=>{function e(){var e=window.innerWidth;desplegarMenu.style.display=e<=480?"block":"none"}navegador=document.querySelector("#nav"),desplegarMenu=document.querySelector("#abrir"),cerrarMenu=document.querySelector("#cerrar"),desplegarMenu.addEventListener("click",()=>{navegador.classList.add("visible"),desplegarMenu.style.display="none"}),cerrarMenu.addEventListener("click",()=>{navegador.classList.remove("visible"),desplegarMenu.style.display="block"}),window.addEventListener("load",e),window.addEventListener("resize",e)});
 //# sourceMappingURL=app.js.map

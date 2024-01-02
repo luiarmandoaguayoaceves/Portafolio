@@ -1,0 +1,28 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+header{
+    background-color: v.$azulTransparente;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    position: fixed;
+    height: 65px;
+}
+
+.abrir-menu, .cerrar-menu{
+    display: none;
+    border: 0;
+    font-size: 2rem;
+}
+
+
+@include m.phone{
+    header{
+        height: 65px;
+    }
+
+    .abrir-menu{
+        display: block;
+    }
+}

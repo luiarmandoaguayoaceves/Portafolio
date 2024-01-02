@@ -5,10 +5,6 @@
     display: flex;
     justify-content: center;
     
-    @include m.phone{
-        display: grid;
-
-    }
  
 }
 .educacion section {

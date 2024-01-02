@@ -5,11 +5,7 @@
     content: url(../img/portada.jpg);
     width: 100vw;
     height: 50vh;
-    margin-top: 95px;
-    @include m.phone{
-        margin-top: 6rem;
-
-    }
+    margin-top: 65px;
 }
 
 .portada:target{

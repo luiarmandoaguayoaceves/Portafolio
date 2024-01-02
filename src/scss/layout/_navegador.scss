@@ -1,30 +1,37 @@
-@use 'base/variables' as v;
-@use 'base/mixins' as m;
+@use "base/variables" as v;
+@use "base/mixins" as m;
 
-.navegador{
-    background-color: v.$azulTransparente;
-    display: flex;
-    justify-content: end;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    padding: 10px;
-    top: 0;
-
+.navegador {
+  display: flex;
+  justify-content: end;
 }
 
-.navegador li{
-    list-style-type: none;
-    padding: 2rem 3rem;
-    font-size: 3rem;
-
-    @include m.phone{
-        font-size: 1rem;
-        padding: 3rem 2rem 0 0;
-
-    }
+.navegador li {
+  list-style-type: none;
+  padding: 2rem 3rem;
+  font-size: 2rem;
 }
 
 .navegador li a {
-    color: v.$blanco;
+  color: v.$blanco;
+}
+
+@include m.phone {
+  .navegador {
+    opacity: 0;
+    visibility: hidden;
+    background: v.$azul;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+  }
+
+  .navegador.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .cerrar-menu {
+    display: block;
+  }
 }
