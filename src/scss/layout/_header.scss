@@ -10,10 +10,30 @@ header{
     height: 65px;
 
     @include m.phone{
-        background: none;  
+        background: none; 
     }
 
     
+}
+
+header button:nth-child(1){
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px;
+        border-radius: 100%;
+}
+
+header button:nth-child(5){
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-radius: 100%;
 }
 
 .abrir-menu, .cerrar-menu{
@@ -26,6 +46,7 @@ header{
 @include m.phone{
     header{
         height: 65px;
+        
     }
 
     .abrir-menu{

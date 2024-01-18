@@ -23,8 +23,8 @@ form{
 }
 .campo{
     display: flex;
-  justify-content: space-between; /* Centrar horizontalmente */
-  margin: 2rem;
+    justify-content: space-between; /* Centrar horizontalmente */
+    margin: 2rem;
 
   @include m.phone{
     display: grid;
@@ -34,8 +34,12 @@ form{
 
 .campo input{
     width: 30rem;
+
     @include m.phone{
-        width: auto;
+        width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
     }
 }
 
@@ -43,13 +47,13 @@ form{
     width: 30rem;
     resize: none;
     @include m.phone{
-        width: 120%;
+        width: 100%;
     }
 }
 
 .campo:last-of-type{
     justify-content: center;
-    margin: 3rem 0 0 0;
+    margin: 2rem 0 0 0;
 }
 
 .boton--primario{

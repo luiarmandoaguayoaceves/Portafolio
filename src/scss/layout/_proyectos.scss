@@ -8,8 +8,9 @@
     padding: 20px;
 
     @include m.phone{
-        grid-template-columns: minmax(45rem, 1fr);
+        grid-template-columns: 1fr;
         padding: 0;
+        place-items: center;
     }
     
 }
@@ -27,9 +28,11 @@
 
     @include m.phone{
         height: auto;
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         margin: 0rem;
+        justify-content: center;
+      align-items: center;
     }
     
 }
