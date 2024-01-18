@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     navegador = document.querySelector('#nav');
     desplegarMenu = document.querySelector('#abrir');
     cerrarMenu = document.querySelector('#cerrar');
+    seleccionMenu = document.querySelectorAll('a');
+
+
 
     desplegarMenu.addEventListener('click', () => {
         navegador.classList.add('visible');
@@ -14,6 +17,16 @@ document.addEventListener('DOMContentLoaded', () => {
         navegador.classList.remove('visible');
         desplegarMenu.style.display = "block";
     })
+    
+    primerosCuatroEnlaces = Array.from(seleccionMenu).slice(0, 4);
+    seleccionMenu.forEach(seleccion => {
+        seleccion.addEventListener('click', () => {
+            navegador.classList.remove('visible');
+            desplegarMenu.style.display = "block";
+        })
+    });
+    
+
     
     function verificarTamañoVentana() {
         var tamañoVentana = window.innerWidth;

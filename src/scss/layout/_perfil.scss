@@ -4,6 +4,10 @@
 
 .perfil{
 display: flex;
+
+@include m.phone{
+    display: grid;
+}
 }
 
 .foto{

@@ -5,6 +5,12 @@
     display: flex;
     justify-content: center;
     
+    @include m.phone{
+        display: grid;
+        grid-template-columns: repeat(minmax(45rem, 1fr));
+        gap: 20px; 
+        padding: 20px;
+    }
  
 }
 .educacion section {
@@ -15,15 +21,14 @@
     width: 25vw;
 
     @include m.phone{
-        width: 80%;
-
+        width: 100%;
+        margin: 0;
     }
 }
 
 .educacion section picture{
     width: 20rem;
     height: 20rem;
-    
 }
 
 .educacion section img{

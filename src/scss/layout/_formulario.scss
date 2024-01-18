@@ -4,6 +4,8 @@
 .formulario{
     display: flex;
     justify-content: center; 
+
+    
 }
 
 form{
@@ -12,25 +14,42 @@ form{
     padding: 3rem;
     color: v.$blanco;
     border-radius: 2%;
+
+    @include m.phone{
+        
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 .campo{
     display: flex;
   justify-content: space-between; /* Centrar horizontalmente */
   margin: 2rem;
+
+  @include m.phone{
+    display: grid;
+    margin: 0 auto;
+    }
 }
 
 .campo input{
     width: 30rem;
+    @include m.phone{
+        width: auto;
+    }
 }
 
 .campo textarea{
     width: 30rem;
     resize: none;
+    @include m.phone{
+        width: 120%;
+    }
 }
 
 .campo:last-of-type{
     justify-content: center;
-    margin-bottom: 0;
+    margin: 3rem 0 0 0;
 }
 
 .boton--primario{

@@ -14,5 +14,9 @@ footer p {
     display: flex;
     justify-content: space-between;
     margin: 0 2rem;
+
+    @include m.phone{
+        margin: 0;
+    }
     
 }

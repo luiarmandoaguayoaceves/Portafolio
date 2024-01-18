@@ -8,6 +8,12 @@ header{
     top: 0;
     position: fixed;
     height: 65px;
+
+    @include m.phone{
+        background: none;  
+    }
+
+    
 }
 
 .abrir-menu, .cerrar-menu{

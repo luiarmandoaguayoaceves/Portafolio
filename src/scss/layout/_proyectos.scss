@@ -6,6 +6,11 @@
     grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
     gap: 20px; 
     padding: 20px;
+
+    @include m.phone{
+        grid-template-columns: minmax(45rem, 1fr);
+        padding: 0;
+    }
     
 }
 
@@ -19,6 +24,13 @@
     border-radius: 10%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
+
+    @include m.phone{
+        height: auto;
+        width: 80%;
+        margin: 0 auto;
+        margin: 0rem;
+    }
     
 }
 

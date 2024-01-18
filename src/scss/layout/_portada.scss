@@ -6,6 +6,9 @@
     width: 100vw;
     height: 50vh;
     margin-top: 65px;
+    @include m.phone{
+        margin-top: 0;
+    }
 }
 
 .portada:target{
