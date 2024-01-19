@@ -27,6 +27,14 @@ display: flex;
 .skill{
     display: flex;
     justify-content: center;
+
+    @include m.phone{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+        place-items: center;
+    }
 }
 
 .btn-like{
