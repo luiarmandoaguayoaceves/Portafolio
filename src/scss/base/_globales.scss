@@ -13,6 +13,8 @@ html{
 body{
     font-family: v.$fuente_principal;
     font-size: 1.6rem;
+    background-color: v.$blanco;
+    color: v.$negro;
 
     &.fijar-body{
         overflow: hidden;
@@ -75,9 +77,8 @@ html{
 }
 
 .layout {
-    width: 1366px;
-    height: 768px;
-  
+    width: 100%;
+    min-height: 100vh;
     display: grid;
     grid:
       "header" auto

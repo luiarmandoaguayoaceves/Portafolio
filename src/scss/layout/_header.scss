@@ -2,7 +2,8 @@
 @use 'base/mixins' as m;
 
 header{
-    background-color: v.$azulTransparente;
+    background-color: v.$blanco;
+    border-bottom: 1px solid v.$gris;
     width: 100%;
     z-index: 1000;
     top: 0;
@@ -10,10 +11,10 @@ header{
     height: 65px;
 
     @include m.phone{
-        background: none; 
+        background-color: v.$blanco;
     }
 
-    
+
 }
 
 header button:nth-child(1){
