@@ -18,12 +18,13 @@
 .card{
     display: flex;
     flex-direction: column;
-    height: 50rem;
+    height: auto;
     margin: 3rem;
-    background-color: v.$azulTransparente;
+    background-color: v.$blanco;
     padding: 3rem;
-    border-radius: 10%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: .5rem;
+    border: 1px solid v.$gris;
+    box-shadow: none;
     transition: transform 0.3s ease;
 
     @include m.phone{
@@ -51,8 +52,8 @@
     width: 20rem;
     background: v.$azul;
     color: v.$blanco;
-    border-radius: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: .5rem;
+    box-shadow: none;
     
 }
 

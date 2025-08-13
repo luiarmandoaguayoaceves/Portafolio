@@ -3,7 +3,8 @@
 
 .navegador {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
+  background-color: v.$blanco;
 }
 
 .navegador li {
@@ -13,14 +14,14 @@
 }
 
 .navegador li a {
-  color: v.$blanco;
+  color: v.$negro;
 }
 
 @include m.phone {
   .navegador {
     opacity: 0;
     visibility: hidden;
-    background: v.$azul;
+    background: v.$blanco;
     flex-direction: column;
     justify-content: center;
     text-align: center;

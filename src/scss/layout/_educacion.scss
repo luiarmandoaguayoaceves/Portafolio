@@ -4,6 +4,8 @@
 .educacion{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
     
     @include m.phone{
         display: grid;
@@ -13,12 +15,14 @@
     }
  
 }
+
 .educacion section {
-    border: 2px solid v.$gris;
-    border-radius: 2%;
+    border: 1px solid v.$gris;
+    border-radius: .5rem;
     margin: 2rem;
     padding: 0 3rem;
-    width: 25vw;
+    flex: 1 1 25rem;
+    max-width: 25rem;
 
     @include m.phone{
         width: 100%;
@@ -27,13 +31,13 @@
 }
 
 .educacion section picture{
-    width: 20rem;
-    height: 20rem;
+    width: 100%;
+    height: auto;
 }
 
 .educacion section img{
-    width: 20vw;
-    height: 30vh;
+    width: 100%;
+    height: auto;
     padding-top: 2rem;
  
     @include m.phone{

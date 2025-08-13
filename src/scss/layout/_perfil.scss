@@ -3,11 +3,14 @@
 @use 'base/mixins' as m;
 
 .perfil{
-display: flex;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 
-@include m.phone{
-    display: grid;
-}
+    @include m.phone{
+        display: grid;
+    }
 }
 
 .foto{
@@ -41,6 +44,7 @@ display: flex;
     width: 15rem;
     height: 5rem;
     margin-top: 10rem;
-    background: v.$azulTransparente;
-    border-radius: 10%;
+    background: v.$blanco;
+    border: 1px solid v.$gris;
+    border-radius: .5rem;
 }
