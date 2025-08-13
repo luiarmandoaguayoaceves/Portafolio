@@ -1,2 +1,0 @@
-const nodemailer=require("nodemailer"),transporter=nodemailer.createTransport({service:"gmail",auth:{user:"tu_correo@gmail.com",pass:"tu_contraseña"}}),mailOptions={from:"tu_correo@gmail.com",to:"destinatario@example.com",subject:"Asunto del Correo",text:"Contenido del correo"};transporter.sendMail(mailOptions,(function(o,e){o?console.log(o):console.log("Correo enviado: "+e.response)}));
-//# sourceMappingURL=correo.js.map
