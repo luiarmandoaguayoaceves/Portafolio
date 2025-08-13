@@ -16,9 +16,13 @@ if (typeof document !== 'undefined') {
         desplegarMenu = document.querySelector('#abrir');
         cerrarMenu = document.querySelector('#cerrar');
         seleccionMenu = document.querySelectorAll('a');
+        const btnLike = document.querySelector('.btn-like');
 
-
-
+        if (btnLike) {
+            btnLike.addEventListener('click', () => {
+                Swal.fire('Gracias por ver mi portafolio');
+            });
+        }
         desplegarMenu.addEventListener('click', () => {
             navegador.classList.add('visible');
             desplegarMenu.style.display = "none";

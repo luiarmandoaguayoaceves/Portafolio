@@ -41,10 +41,21 @@
 }
 
 .btn-like{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 15rem;
     height: 5rem;
     margin-top: 10rem;
-    background: v.$blanco;
-    border: 1px solid v.$gris;
+    background: linear-gradient(135deg, v.$morado, v.$azul);
+    color: v.$blanco;
+    border: none;
     border-radius: .5rem;
+    cursor: pointer;
+    transition: transform .3s ease, box-shadow .3s ease;
+
+    &:hover{
+        transform: translateY(-2px);
+        box-shadow: 0 4px 6px rgba(v.$negro, .1);
+    }
 }
