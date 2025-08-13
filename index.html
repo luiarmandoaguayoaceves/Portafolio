@@ -221,27 +221,13 @@
     </div>
     <h2 id="contactame">Contáctame</h2>
     <div class="formulario">
-        <form action="" method="post" onsubmit="enviarCorreo(); return false;">
-            <div class="campo">
-                <label for="nombre">Nombre</label>
-                <input type="text" placeholder="Nombre" id="nombre" name="nombre" required>
-            </div>
-            <div class="campo">
-                <label for="empresa">Empresa</label>
-                <input type="text" placeholder="Nombre de tu empresa" id="empresa" name="empresa">
-            </div>
-            <div class="campo">
-                <label for="email">Correo electrónico</label>
-                <input type="email" placeholder="correo@ejemplo.com" id="email" name="email" required>
-            </div>
-            <div class="campo">
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-            </div>
-            <div class="campo">
-                <input type="submit" value="Enviar Mensaje" class="boton--primario">
-            </div>
-        </form>
+        <div class="whatsapp-card text-center">
+            <p class="lead mb-3">¿Listo para iniciar tu próximo proyecto?</p>
+            <a class="btn btn-success btn-lg" target="_blank"
+                href="https://wa.me/523328358881?text=Hola%20Luis,%20vi%20tu%20portafolio%20y%20me%20gustaría%20contactarte.">
+                <i class="bi bi-whatsapp"></i> Enviar mensaje
+            </a>
+        </div>
     </div>
     <p class="text-center mt-3">Visita mi <a href="https://github.com/luiarmandoaguayoaceves" target="_blank" rel="noopener">GitHub</a> para más proyectos.</p>
     <a target="_blank" href="https://icons8.com/icon/LoyAjcvVKv1K/portafolio">portafolio</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a>
@@ -254,7 +240,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="build/js/modernizr.js"></script>
     <script src="build/js/app.js"></script>
-    <script src="build/js/correo.js"></script>
 </body>
 
 </html>

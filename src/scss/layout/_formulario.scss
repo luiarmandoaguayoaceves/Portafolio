@@ -1,63 +1,19 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-.formulario{
+.formulario {
     display: flex;
-    justify-content: center; 
-
-    
-}
-
-form{
-    background: v.$azulTransparente;
-    width: 50rem;
-    padding: 3rem;
-    color: v.$blanco;
-    border-radius: 2%;
-
-    @include m.phone{
-        
-        width: 80%;
-        margin: 0 auto;
-    }
-}
-.campo{
-    display: flex;
-    justify-content: space-between; /* Centrar horizontalmente */
-    margin: 2rem;
-
-  @include m.phone{
-    display: grid;
-    margin: 0 auto;
-    }
-}
-
-.campo input{
-    width: 30rem;
-
-    @include m.phone{
-        width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      box-sizing: border-box;
-    }
-}
-
-.campo textarea{
-    width: 30rem;
-    resize: none;
-    @include m.phone{
-        width: 100%;
-    }
-}
-
-.campo:last-of-type{
     justify-content: center;
-    margin: 2rem 0 0 0;
+    margin-top: 2rem;
 }
 
-.boton--primario{
-    height: 4rem;
-    pointer-events: none;
-    
+.whatsapp-card {
+    background: v.$azulTransparente;
+    color: v.$blanco;
+    padding: 3rem;
+    border-radius: 0.5rem;
+}
+
+.whatsapp-card .btn {
+    margin-top: 1rem;
 }
